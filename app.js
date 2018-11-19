@@ -13,8 +13,8 @@ App({
         that.globalData.sysInfo = res;
         that.globalData.windowW = res.windowWidth;
         that.globalData.windowH = res.windowHeight;
-        that.globalData.domain = "http://localhost:3000";
-        // that.globalData.domain = "https://huiyutongwechat.top";
+        // that.globalData.domain = "http://localhost:3000";
+        that.globalData.domain = "https://huiyutongwechat.top";
       }
     })
   },
