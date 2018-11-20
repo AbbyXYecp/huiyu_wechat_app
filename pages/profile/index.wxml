@@ -11,7 +11,7 @@
       （<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
       管理员）
     </span>
-    <span wx:else class="admin-info">—— 至爱珠宝小程序 ——</span>
+    <span wx:else class="admin-info">—— HYTX小程序 ——</span>
     <i bindtap="backend_witch" class="fa fa-tasks hide-btn" aria-hidden="true"></i>
   </view>
 </view>

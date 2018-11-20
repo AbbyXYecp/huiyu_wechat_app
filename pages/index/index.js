@@ -15,10 +15,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
     // 初始化视频窗口
     this.videoContext = wx.createVideoContext('myVideo')
-    
+
     // 获取打开小程序时所在的位置
     var that = this;
     wx.getLocation({
@@ -39,58 +39,59 @@ Page({
     common.simpleRequest({
       url: app.globalData.domain + "/homeset/get_wechat_homeset",
       success: function (res) {
+        console.log('++++++++res:',res);
         that.setData({
           homesetData: res.data.homeset,
-          shopImages: res.data.shop_images,
+          shopImages: res.data.shop_images,  //首页门店图片
           loadJob: "ok"
         })
       }
-    })    
+    })
 
     console.log("两点距离" + that.getDistance(34.268188,108.944725,34.264892,108.950476))
-    
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
@@ -102,7 +103,7 @@ Page({
       console.log(res.target)
     }
     return {
-      title: 至爱珠宝小程序,
+      title: HYTX小程序,
       path: '/pages/index/index',
       success: function (res) {
         wx.showToast({
@@ -117,7 +118,7 @@ Page({
   // 拔打电话
   make_call: function(){
     wx.makePhoneCall({
-      phoneNumber: this.data.homesetData.phone_no 
+      phoneNumber: this.data.homesetData.phone_no
     })
   },
   // 打开地图
@@ -126,7 +127,7 @@ Page({
       latitude: 22.958615,
       longitude: 113.46191,
       scale: 15,
-      name: "至爱珠宝",
+      name: "汇宇通讯",
       address: "广州市番禺区石基镇永善村永峰路5号"
     })
   },

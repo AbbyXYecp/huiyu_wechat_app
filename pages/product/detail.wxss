@@ -55,7 +55,7 @@
   text-align: center;
   color: #fff;
   position: fixed;
-  background: #ec702e;
+  background: #2e2747;
   display: flex;
   flex-flow: row nowrap;
 }

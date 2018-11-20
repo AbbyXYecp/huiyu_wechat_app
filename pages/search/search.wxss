@@ -7,7 +7,7 @@
 }
 
 .search-group {
-  background: #ec702e;
+  background:#2e2747;
   padding: 10rpx 15rpx;
 }
 
@@ -173,7 +173,7 @@ button::after {
 }
 
 .search-again-btn {
-  background: #ec702e;
+  background: #2e2747;
   color: #fff;
   width: 85%;
   margin: 0 auto;

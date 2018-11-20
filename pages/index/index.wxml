@@ -1,3 +1,4 @@
+<!-- 首页 -->
 <view wx:if="{{loadJob == undefined}}" style="text-align: center; margin-top: 90rpx; color: #666;">
   <i class="fa fa-spinner fa-spin fa-fw"></i>加载中...
 </view>
@@ -11,7 +12,7 @@
 </view>
 <!-- 营业时间 -->
 <view class='open-time'>
-  <i class="fa fa-clock-o" aria-hidden="true"></i>{{homesetData.open_time}} 
+  <i class="fa fa-clock-o" aria-hidden="true"></i>{{homesetData.open_time}}
   <!-- 打电话 -->
   <i class="fa fa-phone" bindtap="make_call" aria-hidden="true"></i>
 </view>
